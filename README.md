@@ -1,21 +1,37 @@
 # QA Automation com Playwright
 
-Projeto de automação Web desenvolvido com Playwright e JavaScript.
+Projeto de automação de testes Web desenvolvido com Playwright e JavaScript.
+
+## Tecnologias utilizadas
+
+- Playwright
+- JavaScript
+- Node.js
 
 ## Aplicação automatizada
 
-Test Automation Practice
+- Test Automation Practice
+
+## Instalação
+
+```bash
+npm install
+```
 
 ## Executar os testes
 
-npm install
-
+```bash
 npx playwright test --project=chromium
+```
 
 ## Executar em modo headed
 
+```bash
 npx playwright test --project=chromium --headed
+```
 
 ## Abrir o relatório
 
+```bash
 npx playwright show-report
+```

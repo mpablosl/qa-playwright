@@ -9,7 +9,8 @@ test('deve localizar os elementos principais do formulário', async({ page }) =>
 
     // const cria uma variável constante / nameInput é um nome descritivo page.locator(...) cria um locator
     const nameInput = page.locator('#name');    
-    await nameInput.type('Pablo Soares Lopes');
+    //await nameInput.type('Pablo Soares Lopes');
+    await nameInput.pressSequentially('Pablo Soares Lopes');
     const emailInput = page.locator('#email');
     const phoneInput = page.locator('#phone');
     const maleRadio = page.locator('#male');

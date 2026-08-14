@@ -1,6 +1,6 @@
 const { test, expect } = require('@playwright/test');
 
-test.only('Deve validar o preenchimento e o estado dos campos do formulário', async ({ page }) =>{
+test('Deve validar o preenchimento e o estado dos campos do formulário', async ({ page }) =>{
 
     await page.goto('https://testautomationpractice.blogspot.com/');
 

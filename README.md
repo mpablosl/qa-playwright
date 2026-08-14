@@ -67,3 +67,21 @@ e potencialmente instáveis.
 
 Preferimos aguardar condições reais da aplicação por meio de actions
 e assertions do Playwright.
+
+## Actions
+
+O projeto utiliza actions para simular interações do usuário:
+
+- fill() para preencher campos.
+- check() para marcar radio buttons e checkboxes.
+- uncheck() para desmarcar checkboxes.
+- selectOption() para selecionar opções em elementos select.
+- click() para botões, links e elementos clicáveis.
+- press() para teclas e atalhos.
+- hover() para comportamentos dependentes do mouse.
+
+Após cada action relevante, o teste valida o resultado esperado
+com assertions apropriadas.
+
+Evita-se waitForTimeout() e o uso de click() quando existe
+uma action mais específica, como check().

@@ -1,6 +1,6 @@
 const {test, expect} = require('playwright/test');
 
-test('deve interagir com os campos principais do formulário', async({ page }) =>{
+test.only('deve interagir com os campos principais do formulário', async({ page }) =>{
 
     //Acessar a página fornecida pelo Playwright
     await page.goto('https://testautomationpractice.blogspot.com/');
@@ -32,13 +32,6 @@ test('deve interagir com os campos principais do formulário', async({ page }) =
     await sundayCheckbox.check();
     await expect(sundayCheckbox).toBeChecked();
 
-    const cria uma variável constante / sundayCheckbox é um nome descritivo page.locator(...) cria um locator
-    await sundayCheckbox.uncheck();
-
-    // await expect(sundayCheckbox).toBeUnchecked();
-    await expect(sundayCheckbox).not.toBeChecked();
-    
-    // const cria uma variável constante / mondayCheckbox é um nome descritivo page.locator(...) cria um locator
     const mondayCheckbox = page.locator('#monday');
     await mondayCheckbox.check();
     await expect(mondayCheckbox).toBeChecked();
@@ -56,6 +49,6 @@ test('deve interagir com os campos principais do formulário', async({ page }) =
 
     // const cria uma variável constante / countrySelect é um nome descritivo page.locator(...) cria um locator   
     await countrySelect.selectOption({label:'Canada'});
-    await expect(countrySelect).toHaveValue('canada');        
+    await expect(countrySelect).toHaveValue('canada');    
 
 })

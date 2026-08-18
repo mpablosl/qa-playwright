@@ -2,7 +2,7 @@ const {test, expect} = require('playwright/test');
 
 test.only('deve interagir com os campos principais do formulário', async({ page }) =>{
 
-    //Acessar a página fornecida pelo Playwright
+    //Acessar a página testautomationpractice
     await page.goto('https://testautomationpractice.blogspot.com/');
 
 

@@ -85,3 +85,25 @@ com assertions apropriadas.
 
 Evita-se waitForTimeout() e o uso de click() quando existe
 uma action mais específica, como check().
+
+## Page Object Model
+
+O projeto utiliza Page Object Model para separar:
+
+- locators e ações de página;
+- dados de teste;
+- assertions e comportamento esperado.
+
+A pasta pages/ contém classes que representam páginas ou áreas funcionais
+da aplicação.
+
+Os testes utilizam métodos de alto nível, como:
+
+- open();
+- fillPersonalData();
+- selectMaleGender();
+- selectSunday();
+- selectCountry();
+
+Os dados permanecem nos testes, enquanto a implementação dos elementos
+fica centralizada no Page Object.

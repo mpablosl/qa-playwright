@@ -4,7 +4,7 @@ const {test, expect} = require('@playwright/test');
 //Registrar Testes
 test('deve localizar os elementos principais do formulário', async({ page }) =>{
     
-    //Acessar a página fornecida pelo Playwright
+    //Acessar a página testautomationpractice
     await page.goto('https://testautomationpractice.blogspot.com/');
 
     // const cria uma variável constante / nameInput é um nome descritivo page.locator(...) cria um locator

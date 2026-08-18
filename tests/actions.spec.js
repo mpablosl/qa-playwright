@@ -3,7 +3,7 @@ const {test, expect} = require('playwright/test');
 test.only('deve interagir com os campos principais do formulário', async({ page }) =>{
 
     //Acessar a página testautomationpractice
-    await page.goto('https://testautomationpractice.blogspot.com/');
+    await page.goto('/');
 
 
     // const cria uma variável constante / nameInput é um nome descritivo page.locator(...) cria um locator

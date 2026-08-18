@@ -107,3 +107,38 @@ Os testes utilizam métodos de alto nível, como:
 
 Os dados permanecem nos testes, enquanto a implementação dos elementos
 fica centralizada no Page Object.
+
+## Configuração
+
+O arquivo playwright.config.js centraliza:
+
+- diretório dos testes;
+- baseURL;
+- projects;
+- reporter;
+- retries;
+- screenshots;
+- vídeos;
+- traces;
+- execução paralela.
+
+## Base URL
+
+Os testes utilizam a baseURL configurada no Playwright.
+
+Por isso, os Page Objects navegam utilizando caminhos relativos:
+
+await page.goto('/');
+
+## Projects
+
+O project principal é:
+
+- chromium
+
+Projects adicionais podem representar outros browsers ou configurações
+de execução.
+
+Durante o desenvolvimento, usamos Chromium para obter feedback rápido.
+A execução em múltiplos browsers será utilizada para ampliar a cobertura
+e no pipeline conforme a estratégia do projeto.

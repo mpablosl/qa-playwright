@@ -18,7 +18,7 @@ class PracticeFormPage {
 
     // Acessa a página TestAutomation Practice
     async openSite() {
-        await this.page.goto('https://testautomationpractice.blogspot.com/');
+        await this.page.goto('/');
     }
 
     // Preenche os dados pessoais / Recebe os valores através dos parâmetros: nome, email e telefone
